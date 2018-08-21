@@ -25,3 +25,5 @@ Open IDE and run **UserTest** as general JUnit test
  * [Spring Boot](https://projects.spring.io/spring-boot) allows to build Spring based application very quickly
  * [Spring Data Jpa](https://projects.spring.io/spring-data-jpa) provides enhanced support for JPA layer
  * [Gradle Build Tool](https://gradle.org) your next build tool ;)
+
+Reference: [Baeldung](https://www.baeldung.com/karate-rest-api-testing)
