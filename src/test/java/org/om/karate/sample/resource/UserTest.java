@@ -4,8 +4,10 @@ import com.intuit.karate.junit4.Karate;
 import config.ServerStart;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
 
 @RunWith(Karate.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class UserTest {
 
     private static ServerStart server;
