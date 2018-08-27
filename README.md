@@ -18,6 +18,8 @@ There are 3 steps which allow to see this code in action:
 #### Run tests:
 Open IDE and run **UserTest** as general JUnit test
 
+To generate reports run **GenerateReportParallel** as general JUnit test
+
 ##### For more details visit official documentation:
 
  * [Karate](https://github.com/intuit/karate) framework for testing our endpoints
