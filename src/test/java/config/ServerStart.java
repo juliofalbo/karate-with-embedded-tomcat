@@ -15,7 +15,7 @@ public class ServerStart {
     private ConfigurableApplicationContext context;
     private int port = 0;
 
-    public void start(String[] args, boolean wait) throws Exception {
+    public void start(String[] args) throws Exception {
         SpringApplication app = new SpringApplication(SampleApplication.class);
         app.setAdditionalProfiles("test");
         context = app.run(args);

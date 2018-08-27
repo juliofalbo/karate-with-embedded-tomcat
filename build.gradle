@@ -1,6 +1,9 @@
 buildscript {
     ext {
         springBootVersion = '2.0.4.RELEASE'
+        cucumberReportingVersion = '3.19.0'
+        karateVersion = '0.8.0.1'
+        logbackVersion = '1.2.3'
     }
     repositories {
         mavenCentral()
@@ -47,12 +50,13 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('ch.qos.logback:logback-classic:1.2.3')
-    compile('ch.qos.logback:logback-core:1.2.3')
+    compile 'ch.qos.logback:logback-classic:' + logbackVersion
+    compile 'ch.qos.logback:logback-core:' + logbackVersion
     runtime('com.h2database:h2')
     testCompile('org.springframework.boot:spring-boot-starter-test') {
         exclude module : 'spring-boot-starter-logging'
     }
-    testCompile('com.intuit.karate:karate-junit4:0.8.0.1')
-    testCompile('com.intuit.karate:karate-apache:0.8.0.1')
+    testCompile 'com.intuit.karate:karate-junit4:' + karateVersion
+    testCompile 'com.intuit.karate:karate-apache:' + karateVersion
+    testCompile 'net.masterthought:cucumber-reporting:' + cucumberReportingVersion
 }

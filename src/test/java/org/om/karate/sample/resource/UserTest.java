@@ -15,7 +15,7 @@ public class UserTest {
     public static int startServer() throws Exception {
         if (server == null) { // keep spring boot side alive for all tests including package 'mock'
             server = new ServerStart();
-            server.start(new String[] { "" }, false);
+            server.start(new String[] { "" });
         }
         System.setProperty("demo.server.port", server.getPort() + "");
         return server.getPort();
